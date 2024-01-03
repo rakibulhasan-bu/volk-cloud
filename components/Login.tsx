@@ -21,7 +21,7 @@ export function LogIn() {
     return (
         <Card className="min-w-96 bg-white/90">
             <CardHeader>
-                <CardTitle className="text-center">Log In</CardTitle>
+                <CardTitle className="text-center">Welcome Again</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
                 <div className="space-y-1">
