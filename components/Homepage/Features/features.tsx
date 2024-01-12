@@ -8,8 +8,8 @@ const Features = () => {
         <h1 className=" font-bold text-lg text-secondaryColor text-center mb-8">
           Feature Overview
         </h1>
-        <div className=" flex flex-col lg:flex-row 2xl:flex-row justify-between items-center mb-8">
-          <div className=" flex items-center flex-col gap-3">
+        <div className=" flex flex-col lg:flex-row 2xl:flex-row justify-center items-center mb-8 gap-10">
+          <div className=" flex items-center flex-col gap-3 p-5">
             <img
               width="90"
               height="90"
@@ -17,7 +17,7 @@ const Features = () => {
             />
             <p className=" font-bold">CLAIM YOUR DUES</p>
           </div>
-          <div className=" flex items-center flex-col gap-3">
+          <div className=" flex items-center flex-col gap-3 p-5">
             <img
               width="90"
               height="90"
@@ -25,7 +25,7 @@ const Features = () => {
             />
             <p className=" font-bold">24/7 UNLIMITED SUPPORT</p>
           </div>
-          <div className=" flex items-center flex-col gap-3">
+          <div className=" flex items-center flex-col gap-3 p-5">
             <img
               width="90"
               height="90"
@@ -33,7 +33,7 @@ const Features = () => {
             />
             <p className=" font-bold">CREATE AND SEND INVOICES</p>
           </div>
-          <div className=" flex items-center flex-col gap-3">
+          <div className=" flex items-center flex-col gap-3 p-5">
             <img
               width="90"
               height="90"
@@ -41,7 +41,7 @@ const Features = () => {
             />
             <p className=" font-bold">DOMESTIC REVERSE CHARGES VAT</p>
           </div>
-          <div className=" flex items-center flex-col gap-3">
+          <div className=" flex items-center flex-col gap-3 p-5">
             <img
               width="90"
               height="90"

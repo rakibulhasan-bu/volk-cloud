@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <Header />
-        <div>{children}</div>
+        <div className=" min-h-[calc(100vh-100px)]">{children}</div>
         <Footer />
       </body>
     </html>

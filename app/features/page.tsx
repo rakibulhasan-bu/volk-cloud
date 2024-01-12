@@ -6,7 +6,7 @@ const FeaturePage = () => {
     <section>
       <div className=" container mx-auto">
         <div className=" grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-3">
-          <div className=" text-center">
+          <div className=" text-center space-y-4">
             <div>
               <img src="" alt="" />
             </div>
@@ -16,7 +16,7 @@ const FeaturePage = () => {
             </p>
             <Button>Learn more</Button>
           </div>
-          <div className=" text-center">
+          <div className=" text-center space-y-4">
             <div>
               <img src="" alt="" />
             </div>
@@ -26,7 +26,7 @@ const FeaturePage = () => {
             </p>
             <Button>Learn more</Button>
           </div>
-          <div className=" text-center">
+          <div className=" text-center space-y-4">
             <div>
               <img src="" alt="" />
             </div>

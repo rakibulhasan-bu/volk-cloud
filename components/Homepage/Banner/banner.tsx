@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className=" flex justify-center items-center bg-sky-200 h-[60vh]">
+    <section className=" flex justify-center items-center bg-sky-200 min-h-[80vh]">
       <div className="container mx-auto flex flex-col justify-center items-center">
         <div className=" text-center space-y-6">
           <p className=" flex gap-1 justify-center">
@@ -12,10 +12,10 @@ const Banner = () => {
               30- DAY FREE TRIAL
             </span>
           </p>
-          <h1 className=" font-black text-4xl text-secondaryColor">
+          <h1 className=" font-bold 2xl:text-4xl text-2xl lg:text-4xl text-secondaryColor">
             ACCOUNTING SOFTWARE THAT WILL SIMPLIFY YOUR TASKS.
           </h1>
-          <p className=" text-center text-lg font-bold text-secondaryColor">
+          <p className=" text-center text-lg lg:font-semibold 2xl:font-semibold text-secondaryColor">
             STREAMLIN, SIMPLIGY, SUCCEED: VOLKCLOUD YOUR VERY OWN COMPREHENSIVE
             ACCOUNTING <br />
             COMPANION FOR SMALL TO MEDIUM BUSINESSES!
