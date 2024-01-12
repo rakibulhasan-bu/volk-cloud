@@ -66,7 +66,7 @@ const PricingCard = ({
   <Card
     className={cn(
       `w-72 flex flex-col justify-between py-1 ${
-        popular ? "border-rose-400" : "border-zinc-700"
+        popular ? "border-primaryColor" : "border-zinc-700"
       } mx-auto sm:mx-0`,
       {
         "animate-background-shine bg-white dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors":
@@ -85,7 +85,7 @@ const PricingCard = ({
               className={cn(
                 "px-2.5 rounded-xl h-fit text-sm py-1 bg-zinc-200 text-black dark:bg-zinc-800 dark:text-white",
                 {
-                  "bg-gradient-to-r from-orange-400 to-rose-400 dark:text-black ":
+                  "bg-gradient-to-r from-primaryColor to-cyan-400 dark:text-black ":
                     popular,
                 }
               )}
@@ -119,7 +119,7 @@ const PricingCard = ({
       </CardContent>
     </div>
     <CardFooter className="mt-2">
-      <Button className="relative inline-flex w-full items-center justify-center rounded-md bg-black text-white dark:bg-white px-6 font-medium  dark:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+      <Button className="relative inline-flex w-full items-center justify-center rounded-md bg-primaryColor text-white dark:bg-white px-6 font-medium  dark:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         <div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
         {actionLabel}
       </Button>
@@ -129,7 +129,7 @@ const PricingCard = ({
 
 const CheckItem = ({ text }: { text: string }) => (
   <div className="flex gap-2">
-    <CheckCircle2 size={18} className="my-auto text-green-400" />
+    <CheckCircle2 size={18} className="my-auto text-primaryColor" />
     <p className="pt-0.5 text-zinc-700 dark:text-zinc-300 text-sm">{text}</p>
   </div>
 );

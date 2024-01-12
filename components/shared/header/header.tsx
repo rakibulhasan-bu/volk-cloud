@@ -5,6 +5,7 @@ import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import logo from "../../../public/logo-removebg-preview.png";
 import Image from "next/image";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const pathname = usePathname();
@@ -28,8 +29,8 @@ const Header = () => {
     },
   ];
   return (
-    <header className="bg-white z-50 sticky top-0">
-      <nav className="container mx-auto nav flex h-[100px] items-center justify-between px-4 relative">
+    <header className="bg-white z-50 sticky top-0 border border-b-2">
+      <nav className="container mx-auto nav flex h-[65px] items-center justify-between px-8 relative">
         <Link className="text-xl lg:text-3xl text-black font-bold" href="/">
           <Image src={logo} width={120} alt="logo" />
         </Link>
@@ -59,7 +60,7 @@ const Header = () => {
             open ? " right-14 top-0" : "right-14 -top-[15rem]"
           }`}
         >
-          {/* <MobileMenu /> */}
+          <MobileMenu />
         </div>
       </nav>
     </header>

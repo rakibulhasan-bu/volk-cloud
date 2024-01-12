@@ -18,20 +18,22 @@ import animationData from "../../public/login.json";
 
 const Login = () => {
   return (
-    <section className=" py-24">
+    <section className=" py-10">
       <div className=" container mx-auto">
-        <div className=" lg:flex bg-primaryColor/25 rounded-xl">
-          <div className="w-full lg:w-1/2 2xl:w-1/2 flex justify-center items-center bg-white/95 lg:px-10">
+        <div className=" lg:flex bg-primaryColor/75 rounded-xl">
+          <div className="w-full lg:w-1/2 2xl:w-1/2 flex justify-center items-center bg-white/30 lg:px-10">
             <div className=" w-full">
               <CardHeader>
-                <CardTitle className="text-center">Welcome Again</CardTitle>
+                <CardTitle className="text-center text-slate-900">
+                  Welcome Again
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="space-y-1 pt-1 w-full">
                   <Label htmlFor="terms">Email</Label>
                   <Input
                     type="text"
-                    className="rounded-sm"
+                    className="rounded-sm border-black"
                     placeholder="Email.."
                   />
                 </div>
@@ -39,17 +41,17 @@ const Login = () => {
                   <Label htmlFor="terms">Password</Label>
                   <Input
                     type="password"
-                    className="rounded-sm"
+                    className="rounded-sm border-black"
                     id="password"
                     placeholder="password.."
                   />
                 </div>
               </CardContent>
               <CardFooter className="flex flex-col w-full">
-                <Button className="bg-blue-500 hover:bg-blue-600 rounded-md w-full">
-                  Get Started
+                <Button className="text-black bg-blue-500 hover:bg-blue-600 rounded-md w-full">
+                  Sign In
                 </Button>
-                <div className="flex items-center justify-between w-full pt-2 text-slate-600">
+                <div className="flex items-center justify-between w-full pt-2 text-slate-800">
                   <Link href={"#"} className="hover:text-blue-600">
                     Create account
                   </Link>

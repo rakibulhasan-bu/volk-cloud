@@ -18,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <section className=" py-20">
+    <section className=" py-20 lg:px-16">
       <div className=" container mx-auto">
         <h2 className=" font-bold text-2xl text-center mb-10">Get in Touch</h2>
         <div className=" lg:flex 2xl:flex justify-between items-center gap-5">
@@ -46,7 +46,7 @@ const Contact = () => {
               <Label htmlFor="terms">Name</Label>
               <Input
                 type="password"
-                className="rounded-sm"
+                className="rounded-sm bg-primaryColor/35"
                 id="password"
                 placeholder="Name"
               />
@@ -56,7 +56,7 @@ const Contact = () => {
                 <Label htmlFor="terms">Email</Label>
                 <Input
                   type="password"
-                  className="rounded-sm"
+                  className="rounded-sm bg-primaryColor/35"
                   id="password"
                   placeholder="Name"
                 />
@@ -65,7 +65,7 @@ const Contact = () => {
                 <Label htmlFor="terms">Phone Number</Label>
                 <Input
                   type="password"
-                  className="rounded-sm"
+                  className="rounded-sm bg-primaryColor/35"
                   id="password"
                   placeholder="Name"
                 />
@@ -73,7 +73,10 @@ const Contact = () => {
             </div>
             <div className="space-y-1 pt-1">
               <Label htmlFor="terms">Email</Label>
-              <Textarea placeholder="Type your message here." />
+              <Textarea
+                className="rounded-sm bg-primaryColor/35"
+                placeholder="Type your message here."
+              />
             </div>
             <div>
               <Button className=" bg-primaryColor">Submit Now</Button>

@@ -15,7 +15,7 @@ const Features = () => {
               height="90"
               src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/external-headphones-multimedia-smashingstocks-detailed-outline-smashing-stocks.png"
             />
-            <p className=" font-bold">CLAIM YOUR DUES</p>
+            <p className=" font-bold text-center">CLAIM YOUR DUES</p>
           </div>
           <div className=" flex items-center flex-col gap-3 p-5">
             <img
@@ -23,7 +23,7 @@ const Features = () => {
               height="90"
               src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/external-headphones-multimedia-smashingstocks-detailed-outline-smashing-stocks.png"
             />
-            <p className=" font-bold">24/7 UNLIMITED SUPPORT</p>
+            <p className=" font-bold text-center">24/7 UNLIMITED SUPPORT</p>
           </div>
           <div className=" flex items-center flex-col gap-3 p-5">
             <img
@@ -31,7 +31,7 @@ const Features = () => {
               height="90"
               src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/external-headphones-multimedia-smashingstocks-detailed-outline-smashing-stocks.png"
             />
-            <p className=" font-bold">CREATE AND SEND INVOICES</p>
+            <p className=" font-bold text-center">CREATE AND SEND INVOICES</p>
           </div>
           <div className=" flex items-center flex-col gap-3 p-5">
             <img
@@ -39,7 +39,9 @@ const Features = () => {
               height="90"
               src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/external-headphones-multimedia-smashingstocks-detailed-outline-smashing-stocks.png"
             />
-            <p className=" font-bold">DOMESTIC REVERSE CHARGES VAT</p>
+            <p className=" font-bold text-center">
+              DOMESTIC REVERSE CHARGES VAT
+            </p>
           </div>
           <div className=" flex items-center flex-col gap-3 p-5">
             <img
@@ -47,7 +49,7 @@ const Features = () => {
               height="90"
               src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/external-headphones-multimedia-smashingstocks-detailed-outline-smashing-stocks.png"
             />
-            <p className=" font-bold">REPORTING</p>
+            <p className=" font-bold text-center">REPORTING</p>
           </div>
         </div>
         <div className=" text-center">
