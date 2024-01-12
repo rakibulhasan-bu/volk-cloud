@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { MenuIcon } from "lucide-react";
+import logo from "../../../public/logo-removebg-preview.png";
+import Image from "next/image";
 
 const Header = () => {
   const pathname = usePathname();
@@ -20,12 +22,16 @@ const Header = () => {
       path: "/login",
       title: "Login",
     },
+    {
+      path: "/dashboard",
+      title: "Dashboard",
+    },
   ];
   return (
     <header className="bg-white z-50 sticky top-0">
       <nav className="container mx-auto nav flex h-[100px] items-center justify-between px-4 relative">
         <Link className="text-xl lg:text-3xl text-black font-bold" href="/">
-          Logo
+          <Image src={logo} width={120} alt="logo" />
         </Link>
         <div className=" hidden lg:block">
           <ul className=" flex gap-10">
@@ -55,7 +61,6 @@ const Header = () => {
         >
           {/* <MobileMenu /> */}
         </div>
-        <div>Login</div>
       </nav>
     </header>
   );
