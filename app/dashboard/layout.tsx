@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Sidebar from "@/components/Dashboard/Sidebar";
 
 import Header from "@/components/shared/header/header";
 import Footer from "@/components/shared/footer/footer";
@@ -21,8 +22,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <HeaderDashboard />
-        <div>
-          <main className=" w-full pt-16">{children}</main>
+        <div className="flex h-screen overflow-hidden">
+          <div className='w-1/6 h-full hidden md:block'>
+            <Sidebar />
+          </div>
+          <main className="flex-1 pt-16 overflow-x-hidden overflow-y-auto ">
+            {children}
+          </main>
         </div>
       </body>
     </html>

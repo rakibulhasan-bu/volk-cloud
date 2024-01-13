@@ -8,8 +8,7 @@ const HeaderDashboard = () => {
       <nav className="h-14 flex items-center justify-between px-4">
         <div className="hidden md:block">
           <Link
-            href={"https://github.com/Kiranism/next-shadcn-dashboard-starter"}
-            target="_blank"
+            href={"/home"}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

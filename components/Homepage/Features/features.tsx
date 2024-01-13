@@ -1,11 +1,12 @@
 import { ArrowRightCircle } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Features = () => {
   return (
     <section className=" py-10">
       <div className=" container mx-auto">
-        <h1 className=" font-bold text-lg text-secondaryColor text-center mb-8">
+        <h1 className=" font-bold text-xl text-secondaryColor text-center mb-8">
           Feature Overview
         </h1>
         <div className=" flex flex-col lg:flex-row 2xl:flex-row justify-center items-center mb-8 gap-10">
@@ -53,9 +54,9 @@ const Features = () => {
           </div>
         </div>
         <div className=" text-center">
-          <button className=" font-bold text-lg bg-primaryColor px-6 py-2 rounded-md text-white">
+          <Link href={'/features'} className=" font-bold text-lg bg-primaryColor px-6 py-2 rounded-md text-white">
             All Features <ArrowRightCircle className=" inline-block ml-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -33,7 +33,7 @@ const Login = () => {
                   <Label htmlFor="terms">Email</Label>
                   <Input
                     type="text"
-                    className="rounded-sm border-black"
+                    className="rounded-sm border-black/50 bg-white"
                     placeholder="Email.."
                   />
                 </div>
@@ -41,14 +41,14 @@ const Login = () => {
                   <Label htmlFor="terms">Password</Label>
                   <Input
                     type="password"
-                    className="rounded-sm border-black"
+                    className="rounded-sm border-black/50 bg-white"
                     id="password"
                     placeholder="password.."
                   />
                 </div>
               </CardContent>
               <CardFooter className="flex flex-col w-full">
-                <Button className="text-black bg-blue-500 hover:bg-blue-600 rounded-md w-full">
+                <Button className="text-white bg-blue-500 hover:bg-blue-600 rounded-md w-full">
                   Sign In
                 </Button>
                 <div className="flex items-center justify-between w-full pt-2 text-slate-800">
