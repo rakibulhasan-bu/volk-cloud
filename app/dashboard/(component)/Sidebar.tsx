@@ -35,7 +35,7 @@ export default function Sidebar() {
               <span>Insight</span>
             </Link>
             <Link
-              href={"/dashboard"}
+              href={"/dashboard/transaction"}
               className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
                 currentRoute === "/dashboard/transaction"
                   ? "bg-blue-300"
@@ -46,7 +46,7 @@ export default function Sidebar() {
               <span>Transaction</span>
             </Link>
             <Link
-              href={"/dashboard"}
+              href={"/dashboard/account"}
               className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
                 currentRoute === "/dashboard/account"
                   ? "bg-blue-300"
