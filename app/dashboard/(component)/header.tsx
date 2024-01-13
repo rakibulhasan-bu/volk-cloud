@@ -1,4 +1,5 @@
-import { Bell, MessageCircleCode } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Bell, MessageCircleCode, SearchIcon } from "lucide-react";
 import React from "react";
 
 const Header = () => {
@@ -9,7 +10,9 @@ const Header = () => {
           <h1 className=" text-2xl font-bold">Dashboard</h1>
         </div>
         <div className=" flex justify-end gap-10 items-center text-black w-4/5">
-          <div>search</div>
+          <div>
+            <Input placeholder="Search..." type="search" />
+          </div>
           <div className=" flex items-center gap-2 text-gray-500">
             <MessageCircleCode />
             <Bell />
