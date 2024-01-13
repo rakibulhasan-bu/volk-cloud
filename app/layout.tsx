@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
+
 import Header from "@/components/shared/header/header";
 import Footer from "@/components/shared/footer/footer";
 
@@ -21,10 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <Header />
-        <div className="min-h-[calc(100vh-100px)]">
-          <Toaster />
-          {children}
-        </div>
+        <div className="min-h-[calc(100vh-100px)]">{children}</div>
         <Footer />
       </body>
     </html>

@@ -1,35 +1,37 @@
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Bell, MessageCircleCode } from "lucide-react";
 import React from "react";
 
-const HeaderDashboard = () => {
+const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 supports-backdrop-blur:bg-background/60 border-b bg-background/95 backdrop-blur z-20">
-      <nav className="h-14 flex items-center justify-between px-4">
-        <div className="hidden md:block">
-          <Link
-            href={"/home"}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="mr-2 h-6 w-6"
-            >
-              <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
-            </svg>
-          </Link>
+    <section className=" bg-white p-3">
+      <div className=" flex justify-between items-center container mx-auto">
+        <div className=" w-1/5">
+          <h1 className=" text-2xl font-bold">Dashboard</h1>
         </div>
-        <div className={cn("block sm:!hidden")}>{/* <MobileSidebar /> */}</div>
+        <div className=" flex justify-end gap-10 items-center text-black w-4/5">
+          <div>search</div>
+          <div className=" flex items-center gap-2 text-gray-500">
+            <MessageCircleCode />
+            <Bell />
+          </div>
 
-        <div className="flex items-center gap-2">user</div>
-      </nav>
-    </div>
+          <div className=" flex items-center gap-4">
+            <div className=" text-right">
+              <p className=" font-semibold">Monica Volcko</p>
+              <p className=" text-sm text-gray-500 font-medium">
+                Administrator
+              </p>
+            </div>
+            <img
+              className=" rounded-full w-14 h-14 object-cover"
+              src="https://imgs.search.brave.com/mxcvBwezjML3L3Cw5NzmL3Fa_Q73aYwG0LQ96TqvdOc/rs:fit:860:0:0/g:ce/aHR0cDovL3d3dy53/aGF0c2FwcGltYWdl/cy5pbi93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wOS9HaXJs/LURQLmpwZw"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default HeaderDashboard;
+export default Header;
