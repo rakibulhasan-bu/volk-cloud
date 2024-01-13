@@ -1,6 +1,12 @@
 "use client";
 
-import { LayoutDashboardIcon } from "lucide-react";
+import {
+  BarChartBig,
+  Home,
+  Landmark,
+  LayoutDashboardIcon,
+  Settings,
+} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -31,7 +37,7 @@ export default function Sidebar() {
                   : "bg-transparent"
               }`}
             >
-              <LayoutDashboardIcon className="mr-2 h-4 w-4" />
+              <BarChartBig className="mr-2 h-4 w-4" />
               <span>Insight</span>
             </Link>
             <Link
@@ -42,7 +48,7 @@ export default function Sidebar() {
                   : "bg-transparent"
               }`}
             >
-              <LayoutDashboardIcon className="mr-2 h-4 w-4" />
+              <Landmark className="mr-2 h-4 w-4" />
               <span>Transaction</span>
             </Link>
             <Link
@@ -57,26 +63,24 @@ export default function Sidebar() {
               <span>Account</span>
             </Link>
             <Link
-              href={"/dashboard"}
+              href={"/dashboard/setting"}
               className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
                 currentRoute === "/dashboard/setting"
                   ? "bg-blue-300"
                   : "bg-transparent"
               }`}
             >
-              <LayoutDashboardIcon className="mr-2 h-4 w-4" />
+              <Settings className="mr-2 h-4 w-4" />
               <span>Setting</span>
             </Link>
             <Link
-              href={"/dashboard"}
+              href={"/"}
               className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
-                currentRoute === "/dashboard/account"
-                  ? "bg-blue-300"
-                  : "bg-transparent"
+                currentRoute === "/" ? "bg-blue-300" : "bg-transparent"
               }`}
             >
-              <LayoutDashboardIcon className="mr-2 h-4 w-4" />
-              <span>Account</span>
+              <Home className="mr-2 h-4 w-4" />
+              <span>Home</span>
             </Link>
             <Link
               href={"/dashboard"}
