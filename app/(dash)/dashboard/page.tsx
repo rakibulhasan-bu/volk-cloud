@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./(component)/header";
+import Header from "../../../components/Dashborad-compo/header";
 import {
   MessageSquareMoreIcon,
   PanelLeftDashed,
   Pin,
   Stethoscope,
 } from "lucide-react";
-import Chart from "./(component)/chart";
+import Chart from "../../../components/Dashborad-compo/chart";
 
 const Dashboard = () => {
   return (

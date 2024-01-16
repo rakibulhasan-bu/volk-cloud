@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/shared/header/header";
 import Footer from "@/components/shared/footer/footer";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // const currentRoute = usePathname();
+
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
