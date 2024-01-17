@@ -16,6 +16,7 @@ import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import Lottie from "lottie-react";
 import animationData from "../../../public/signup.json";
+import { useRouter } from "next/navigation";
 
 type Inputs = {
   name: string;
@@ -25,6 +26,7 @@ type Inputs = {
 };
 
 const SignUppage = () => {
+  const navigate = useRouter();
   const {
     register,
     handleSubmit,
@@ -34,6 +36,7 @@ const SignUppage = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     const userData = JSON.stringify(data);
     localStorage.setItem("user", userData);
+    navigate.push("/login");
   };
   return (
     <section className=" py-10">
