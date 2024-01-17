@@ -36,7 +36,7 @@ const SignUppage = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     const userData = JSON.stringify(data);
     localStorage.setItem("user", userData);
-    navigate.push("/login");
+    navigate.push("/");
   };
   return (
     <section className=" py-10">
