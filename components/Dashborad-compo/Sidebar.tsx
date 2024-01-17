@@ -22,7 +22,7 @@ export default function Sidebar() {
           <div className="space-y-2 grid items-start gap-2">
             <Link
               href={"/dashboard"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300 hover:text-accent-foreground duration-500 ${
                 currentRoute === "/dashboard" ? "bg-blue-300" : "bg-transparent"
               }`}
             >
@@ -31,7 +31,7 @@ export default function Sidebar() {
             </Link>
             <Link
               href={"/dashboard/insight"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300 hover:text-accent-foreground duration-500 ${
                 currentRoute === "/dashboard/insight"
                   ? "bg-blue-300"
                   : "bg-transparent"
@@ -42,7 +42,7 @@ export default function Sidebar() {
             </Link>
             <Link
               href={"/dashboard/transaction"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300  hover:text-accent-foreground duration-500 ${
                 currentRoute === "/dashboard/transaction"
                   ? "bg-blue-300"
                   : "bg-transparent"
@@ -53,7 +53,7 @@ export default function Sidebar() {
             </Link>
             <Link
               href={"/dashboard/account"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300  hover:text-accent-foreground duration-500 ${
                 currentRoute === "/dashboard/account"
                   ? "bg-blue-300"
                   : "bg-transparent"
@@ -64,7 +64,7 @@ export default function Sidebar() {
             </Link>
             <Link
               href={"/dashboard/setting"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300  hover:text-accent-foreground duration-500 ${
                 currentRoute === "/dashboard/setting"
                   ? "bg-blue-300"
                   : "bg-transparent"
@@ -75,7 +75,7 @@ export default function Sidebar() {
             </Link>
             <Link
               href={"/"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300  hover:text-accent-foreground duration-500 ${
                 currentRoute === "/" ? "bg-blue-300" : "bg-transparent"
               }`}
             >
@@ -84,7 +84,7 @@ export default function Sidebar() {
             </Link>
             <Link
               href={"/dashboard"}
-              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground ${
+              className={`group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-blue-300  hover:text-accent-foreground duration-500 ${
                 currentRoute === "/switch-account"
                   ? "bg-blue-300"
                   : "bg-transparent"

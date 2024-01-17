@@ -8,6 +8,9 @@ import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
+  const userData = localStorage.getItem("user");
+  const loggedIn = JSON.parse(userData as string);
+  console.log(loggedIn);
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const navlinks = [
@@ -19,14 +22,12 @@ const Header = () => {
       path: "/features",
       title: "Features",
     },
-    {
-      path: "/login",
-      title: "Login",
-    },
-    {
-      path: "/dashboard",
-      title: "Dashboard",
-    },
+    loggedIn
+      ? {
+          path: "/dashboard",
+          title: "Dashboard",
+        }
+      : { path: "/login", title: "Login" },
   ];
   return (
     <header className="bg-white z-50 sticky top-0 border border-b-2">
